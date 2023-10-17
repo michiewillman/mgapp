@@ -1,0 +1,18 @@
+.medLogTime {
+  color: #e8e9ed;
+  background-color: #d55669;
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.medLogName {
+  color: #2e7c8b;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.medLogDosage {
+  font-weight: 300;
+}

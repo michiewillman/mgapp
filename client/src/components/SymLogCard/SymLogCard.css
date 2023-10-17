@@ -1,0 +1,28 @@
+.logLeft {
+  display: flex;
+  flex: wrap;
+  align-items: center;
+}
+
+.severityBadge {
+  margin-right: 30px;
+}
+
+.severityTitle {
+  display: block;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+.severityValue {
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 30px;
+  background-color: #318798;
+}
+
+.symptomLogName {
+  font-weight: 900;
+  font-size: 20px;
+  width: 100%;
+}

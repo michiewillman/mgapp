@@ -1,0 +1,31 @@
+.entryScreen {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #d4cfc9 0%, #318798 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.entryContent {
+  background: white;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  pointer-events: auto;
+  text-align: center;
+}
+
+.entryBtns {
+  margin: 15px 0 0 0;
+}
+
+.entryBtn {
+  margin-right: 25px;
+}

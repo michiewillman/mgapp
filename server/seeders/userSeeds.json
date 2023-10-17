@@ -1,0 +1,41 @@
+[
+  {
+    "firstName": "Brian",
+    "lastName": "Ono",
+    "email": "bkernighan@techfriends.dev",
+    "password": "password01",
+    "medications": ["prednisone", "mestinon", "iron"],
+    "symptoms": ["Droopy eyelid(s)"]
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Scott",
+    "email": "mike@dundermufflin.com",
+    "password": "dundee33",
+    "medications": [],
+    "symptoms": ["Difficulty chewing", "Impaired speech", "Facial expressions"]
+  },
+  {
+    "firstName": "Rain",
+    "lastName": "Wilson",
+    "email": "dwight@schrutefarms.org",
+    "password": "beetsbattlestar",
+    "medications": ["l-theanine", "mestinon"],
+    "symptoms": []
+  },
+  {
+    "firstName": "Ron",
+    "lastName": "Swanson",
+    "email": "hardwareguy08@gmail.com",
+    "password": "toolsMEAT08",
+    "dob": "Fri Jun 17 2022 11:27:28 GMT+0100",
+    "medications": ["imuran"],
+    "symptoms": ["Shortness of Breath", "General fatigue"]
+  },
+  {
+    "firstName": "Michie",
+    "lastName": "Willman",
+    "email": "contact@michiewillman.com",
+    "password": "mutationstation"
+  }
+]

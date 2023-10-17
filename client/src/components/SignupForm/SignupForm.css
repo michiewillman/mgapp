@@ -1,0 +1,55 @@
+/* Forms - input and textarea */
+.login-card {
+  max-width: 400px;
+}
+
+.create-card {
+  max-width: 600px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .item-card {
+    width: 50%;
+  }
+  .create-card {
+    width: 600px;
+  }
+}
+
+input {
+  border: 1px solid #d7d5d5;
+  border-radius: 15px;
+  padding: 20px;
+  height: 40px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.input-section {
+  padding-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+textarea:focus,
+input:focus,
+input[type]:focus,
+.uneditable-input:focus {
+  border-color: #e79d46;
+  outline: none;
+}
+
+.form-input {
+  border: 1px solid #d7d5d5;
+  min-height: 40px;
+}
+
+.container-shadow {
+  -webkit-box-shadow: var(--webkit-box-shadow);
+  -moz-box-shadow: var(--moz-box-shadow);
+  box-shadow: var(--box-shadow);
+}
