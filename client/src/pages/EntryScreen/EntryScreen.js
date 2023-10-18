@@ -4,8 +4,6 @@ import "./EntryScreen.css";
 import entryLogo from "../../assets/logo-teal@2x.png";
 
 const EntryScreen = () => {
-  // const entryLogo = "./"
-
   return (
     <div className="entryScreen">
       <div className="entryLogo">
