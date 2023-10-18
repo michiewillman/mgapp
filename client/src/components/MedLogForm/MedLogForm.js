@@ -43,17 +43,17 @@ const MedLogForm = (props) => {
       // Clear the form by resetting the state
       setFormState({ medicationName: "", dosage: "" });
 
-      const { renderParent, toggleModal } = props;
-      renderParent();
-      toggleModal();
+      // const { renderParent, toggleModal } = props;
+      // renderParent();
+      props.toggleModal();
     } catch (err) {
       console.error(err);
     }
   };
 
-  const toggleModal = () => {
-    props.setIsShown(!props.shown);
-  };
+  // const toggleModal = () => {
+  //   props.setIsShown(!props.shown);
+  // };
 
   return (
     <div className="overlay">

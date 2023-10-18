@@ -11,18 +11,17 @@
 .severityTitle {
   display: block;
   font-weight: 200;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .severityValue {
   color: #ffffff;
-  padding: 5px 10px;
-  border-radius: 30px;
-  background-color: #318798;
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: var(--orange-dark);
 }
 
 .symptomLogName {
   font-weight: 900;
   font-size: 20px;
-  width: 100%;
 }

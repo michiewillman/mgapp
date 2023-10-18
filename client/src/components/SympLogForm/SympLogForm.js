@@ -1,18 +1,25 @@
 import { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { ADD_SYMPTOM_LOG } from "../../utils/mutations";
+import { ADD_SYMPTOM_LOG, ADD_USER_SYMPTOM } from "../../utils/mutations";
 import { PrimaryButton, SecondaryButton } from "../Button/Button";
 // import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import "./SympLogForm.css";
 
 import Auth from "../../utils/auth";
+import firstToUppercase from "../../utils/firstToUppercase";
 
 const SympLogForm = (props) => {
   const [formState, setFormState] = useState({ symptomName: "", severity: "" });
 
-  const [addSymptomLog, { error }] = useMutation(ADD_SYMPTOM_LOG);
+  // Add Symptom Log with severity through form
+  const [addSymptomLog, { error: addSymptomLogError }] =
+    useMutation(ADD_SYMPTOM_LOG);
 
-  // Update state change with input change
+  // Add the symptom name to the User's symptoms property
+  const [addUserSymptom, { error: addUserSymptomError }] =
+    useMutation(ADD_USER_SYMPTOM);
+
+  // Updat e state change with input change
   const handleInputChange = (event) => {
     const { name, value } = event.target;
 
@@ -38,20 +45,28 @@ const SympLogForm = (props) => {
         },
       });
 
+      handleAddUserSymptom(formState.symptomName);
+
       // Clear the form by resetting the state
       setFormState({ symptomName: "", severity: "" });
-
-      const { renderParent, toggleModal } = props;
-      renderParent();
-      toggleModal();
+      props.toggleModal();
     } catch (err) {
-      console.error(err);
+      console.log(addSymptomLogError);
     }
   };
 
-  // const toggleModal = () => {
-  //   props.setIsShown(!props.shown);
-  // };
+  // Handle adding the symptom name to the User's symptoms property (array)
+  const handleAddUserSymptom = async (input) => {
+    const newSymptom = firstToUppercase(input);
+
+    try {
+      const data = await addUserSymptom({
+        variables: { symptom: newSymptom },
+      });
+    } catch (err) {
+      console.log(addUserSymptomError);
+    }
+  };
 
   return (
     <div className="overlay">
@@ -89,9 +104,9 @@ const SympLogForm = (props) => {
                   type="button"
                 />
                 <PrimaryButton text="Submit" type="Submit" />
-                {error && (
+                {addSymptomLogError && (
                   <div className="col-12 my-3 bg-danger text-white p-3">
-                    {error.message}
+                    {addSymptomLogError.message}
                   </div>
                 )}
               </form>

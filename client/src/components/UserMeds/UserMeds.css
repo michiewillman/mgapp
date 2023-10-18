@@ -1,17 +1,17 @@
 .medSection {
   margin: 20px 0;
 }
+
 .medHeadline {
   margin: 15px 0;
 }
 
 .medContainer {
-  display: flex;
-  flex: wrap;
+  justify-content: space-around;
 }
 
 .medCard {
-  width: 150px;
+  width: 100%;
   height: 150px;
   padding: 20px;
   margin: 5px;

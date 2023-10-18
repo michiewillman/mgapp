@@ -1,6 +1,6 @@
 .medLogTime {
-  color: #e8e9ed;
-  background-color: #d55669;
+  color: var(--light);
+  background-color: var(--blue);
   font-weight: 900;
   font-size: 20px;
   margin-right: 20px;
@@ -9,7 +9,7 @@
 }
 
 .medLogName {
-  color: #2e7c8b;
+  color: var(--primary-dark);
   font-weight: 500;
   margin-right: 20px;
 }

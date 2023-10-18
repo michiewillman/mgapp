@@ -2,7 +2,7 @@ import { SmallButton } from "../Button/Button";
 import { useEffect, useState } from "react";
 import MedLogForm from "../MedLogForm/MedLogForm";
 import firstToUppercase from "../../utils/firstToUppercase";
-import Grid from "@mui/material/Grid"; // Grid version 1
+import Grid from "@mui/material/Grid";
 import AddBoxIcon from "@mui/icons-material/AddBox";
 import "./UserMeds.css";
 import NewMedForm from "../NewMedForm/NewMedForm";
@@ -39,7 +39,7 @@ const UserMeds = () => {
       <Grid>
         <div className="medSection">
           <h2 className="medHeadline">Your Medications</h2>
-          <Grid container>
+          <Grid container className="medContainer">
             {medsArray?.map((med, index) => (
               <Grid key={med + index}>
                 <div className="medCard">
