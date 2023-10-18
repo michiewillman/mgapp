@@ -19,6 +19,8 @@ const SymptomLogList = (props) => {
   const { datetime } = props;
   const { loading, data } = useQuery(QUERY_SYMPTOM_LOGS, {
     variables: { datetime },
+    // Every 200 milliseconds refresh the query
+    pollInterval: 200,
   });
   const logData = data?.symptomLogs || [];
   const [listState, setListState] = useState(logData);

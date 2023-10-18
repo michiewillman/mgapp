@@ -1,6 +1,6 @@
 // Use query to get graphQL data
 import { useQuery } from "@apollo/client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { QUERY_MEDICATION_LOGS } from "../../utils/queries";
 import MedLogCard from "../MedLogCard/MedLogCard";
 import Loading from "../Loading/Loading";
@@ -11,15 +11,10 @@ const MedicationLogList = (props) => {
   const { datetime } = props;
   const { loading, data } = useQuery(QUERY_MEDICATION_LOGS, {
     variables: { datetime },
+    // Every 200 milliseconds refresh the query
+    pollInterval: 200,
   });
   const logData = data?.medicationLogs || [];
-
-  const [listState, setListState] = useState(logData);
-
-  const renderParent = () => {
-    // setListState(listState);
-    console.log(listState);
-  };
 
   return (
     <div className="my-2">

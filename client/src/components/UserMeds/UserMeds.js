@@ -1,14 +1,22 @@
 import { SmallButton } from "../Button/Button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MedLogForm from "../MedLogForm/MedLogForm";
 import firstToUppercase from "../../utils/firstToUppercase";
 import Grid from "@mui/material/Grid"; // Grid version 1
 import AddBoxIcon from "@mui/icons-material/AddBox";
 import "./UserMeds.css";
 import NewMedForm from "../NewMedForm/NewMedForm";
+import { useQuery, useMutation } from "@apollo/client";
+import { QUERY_ME } from "../../utils/queries";
 
-const UserMeds = (props) => {
-  const userMeds = props.medications;
+const UserMeds = () => {
+  const { loading, data } = useQuery(QUERY_ME, {
+    // Every 200 milliseconds refresh the query
+    pollInterval: 200,
+  });
+
+  const user = data?.me || {};
+  const medsArray = user?.medications || [];
 
   // State control for New Med Form
   const [medFormShown, setMedForm] = useState(false);
@@ -31,18 +39,17 @@ const UserMeds = (props) => {
       <Grid>
         <div className="">
           <Grid container>
-            {userMeds.length &&
-              userMeds.map((med, index) => (
-                <Grid key={med + index}>
-                  <div className="medCard">
-                    <p className="medName">{firstToUppercase(med)}</p>
-                    <SmallButton
-                      text={"Take Med"}
-                      action={() => toggleModal(firstToUppercase(med))}
-                    />
-                  </div>
-                </Grid>
-              ))}
+            {medsArray?.map((med, index) => (
+              <Grid key={med + index}>
+                <div className="medCard">
+                  <p className="medName">{firstToUppercase(med)}</p>
+                  <SmallButton
+                    text={"Take Med"}
+                    action={() => toggleModal(firstToUppercase(med))}
+                  />
+                </div>
+              </Grid>
+            ))}
             <Grid className="addMedCard">
               <AddBoxIcon
                 fontSize="large"
