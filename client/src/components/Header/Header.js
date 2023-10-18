@@ -1,11 +1,12 @@
-import Navbar from "../Navbar/Navbar";
+// import Navbar from "../Navbar/Navbar";
 import "./Header.css";
+import mainLogo from "../../assets/logo-orange@2x.png";
 
 const Header = () => {
   return (
     <header>
-      <h1>MG Metrics</h1>
-      <Navbar />
+      <img src={mainLogo} />
+      {/* <Navbar /> */}
     </header>
   );
 };

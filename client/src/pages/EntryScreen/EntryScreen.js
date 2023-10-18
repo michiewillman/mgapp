@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
 import { PrimaryButton } from "../../components/Button/Button";
 import "./EntryScreen.css";
+import entryLogo from "../../assets/logo-teal@2x.png";
 
 const EntryScreen = () => {
+  // const entryLogo = "./"
+
   return (
     <div className="entryScreen">
+      <div className="entryLogo">
+        <img src={entryLogo} />
+      </div>
       <div className="entryContent">
         <h1>MG Won't Stop Me</h1>
         <p>

@@ -31,7 +31,7 @@ const SymptomLogList = (props) => {
   };
 
   return (
-    <div className="flexContainer">
+    <div className="symptomsSection flexContainer">
       <h2>Symptoms Logged Today</h2>
       {logData.length ? (
         <div className="flex-row">
@@ -46,7 +46,7 @@ const SymptomLogList = (props) => {
           ))}
         </div>
       ) : (
-        <h3>You haven't logged any symptoms yet.</h3>
+        <p className="noLogMessage">No symptoms logged for this day.</p>
       )}
       <PrimaryButton text={"Log Symptom"} action={toggleModal} />
       {isShown && (

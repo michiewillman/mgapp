@@ -1,13 +1,15 @@
 header {
-  background: linear-gradient(135deg, #318798 0%, #215964 100%);
+  background-color: #e8e9ed;
   position: fixed;
   width: 100%;
   top: 0;
-  left: 0;
   padding: 20px;
-  /* border-radius: 0 0 15px 15px; */
+  /* margin: 0 10px 0 10px; */
+  /* border-radius: 50px; */
+  display: flex;
+  justify-content: center;
 }
 
-header h1 {
-  color: #ffffff;
+header img {
+  width: 200px;
 }

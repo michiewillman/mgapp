@@ -24,7 +24,7 @@ const Dashboard = () => {
         <div>
           <Calendar onDateSelected={(date) => setSelectedDate(date)} />
           <MedicationLogList datetime={selectedDate} />
-          <UserMeds  />
+          <UserMeds />
           <SymptomLogList datetime={selectedDate} />
         </div>
       </LocalizationProvider>

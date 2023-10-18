@@ -55,9 +55,9 @@ function App() {
       {/* Keeps track of the user global state */}
       {/* <UserProvider> */}
       <Router>
-        <div>
+        <div className="pageContainer">
           <Header />{" "}
-          <div className="mainContainer">
+          <div className="contentContainer">
             {Auth.loggedIn() ? (
               <Routes>
                 <Route path="/" element={<Dashboard />} />

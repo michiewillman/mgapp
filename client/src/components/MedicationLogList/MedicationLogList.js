@@ -17,7 +17,7 @@ const MedicationLogList = (props) => {
   const logData = data?.medicationLogs || [];
 
   return (
-    <div className="my-2">
+    <div className="medLogSection">
       <h2>Medication</h2>
       {logData.length ? (
         <div className="flex-row">
@@ -33,7 +33,7 @@ const MedicationLogList = (props) => {
           ))}
         </div>
       ) : (
-        <h3>You haven't logged any medications today.</h3>
+        <p className="noLogMessage">No medications logged for this day.</p>
       )}
       {/* <Loading loading={loading} /> */}
     </div>

@@ -37,7 +37,8 @@ const UserMeds = () => {
   return (
     <>
       <Grid>
-        <div className="">
+        <div className="medSection">
+          <h2 className="medHeadline">Your Medications</h2>
           <Grid container>
             {medsArray?.map((med, index) => (
               <Grid key={med + index}>
