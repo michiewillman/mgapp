@@ -1,16 +1,17 @@
 .primaryButton {
   color: #e8e9ed;
-  background-color: #318798;
+  background-color: var(--primary-dark);
   border-style: none;
   padding: 10px 20px;
   margin: 10px 0;
-  border-radius: 10px;
+  border-radius: 25px;
+  transition: 0.3s;
 }
 
 .primaryButton:hover {
-  background: linear-gradient(135deg, #318798 0%, #215964 100%);
-  box-shadow: 15px 13px 12px rgba(0, 0, 0, 0.02),
-    7px 6px 9px rgba(0, 0, 0, 0.03), 2px 1px 5px rgba(0, 0, 0, 0.03);
+  background-color: var(--primary);
+  box-shadow: var(--box-shadow);
+  transition: 0.3s;
 }
 
 .secondaryButton {
@@ -20,6 +21,7 @@
   padding: 10px 20px;
   margin: 0 10px 0 0;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .secondaryButton:hover {
@@ -28,6 +30,7 @@
   box-shadow: inset 6px 8px 4px rgba(0, 0, 0, 0.01),
     inset 3px 4px 3px rgba(0, 0, 0, 0.02), inset 1px 2px 2px rgba(0, 0, 0, 0.03),
     inset 0px 0px 1px rgba(0, 0, 0, 0.04);
+  transition: 0.3s;
 }
 
 .smallButton {
@@ -40,6 +43,7 @@
   width: 100%;
   margin: 20px 0 0 0;
   border-radius: 8px;
+  transition: 0.3s;
 }
 
 .smallButton:hover {
@@ -48,6 +52,7 @@
   box-shadow: inset 6px 8px 4px rgba(0, 0, 0, 0.01),
     inset 3px 4px 3px rgba(0, 0, 0, 0.02), inset 1px 2px 2px rgba(0, 0, 0, 0.03),
     inset 0px 0px 1px rgba(0, 0, 0, 0.04);
+  transition: 0.3s;
 }
 
 .delLogButton {
@@ -57,18 +62,22 @@
   position: relative;
   top: 5px;
   right: 5px;
+  transition: 0.3s;
 }
 
 .delLogButton:hover {
   color: #586062;
   background-color: #d2d9db;
   border-radius: 5px;
+  transition: 0.3s;
 }
 
 .delBadge {
   color: #98c3cc;
+  transition: 0.3s;
 }
 
 .delBadge:hover {
   color: #aedee8;
+  transition: 0.3s;
 }
