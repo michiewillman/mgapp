@@ -25,11 +25,6 @@ const SymptomLogList = (props) => {
   const logData = data?.symptomLogs || [];
   const [listState, setListState] = useState(logData);
 
-  const renderParent = () => {
-    // setListState(listState);
-    console.log(listState);
-  };
-
   return (
     <div className="symptomsSection flexContainer">
       <h2>Symptoms Logged Today</h2>
@@ -51,7 +46,6 @@ const SymptomLogList = (props) => {
       <PrimaryButton text={"Log Symptom"} action={toggleModal} />
       {isShown && (
         <SympLogForm
-          renderParent={renderParent}
           shown={isShown}
           setIsShown={setIsShown}
           toggleModal={toggleModal}
