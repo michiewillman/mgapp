@@ -1,6 +1,6 @@
 footer {
   background-color: #f2f2f2;
-  color: #318798;
+  color: var(--primary-dark);
   display: flex;
   justify-content: center;
   width: 100%;

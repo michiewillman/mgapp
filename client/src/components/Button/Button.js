@@ -1,9 +1,9 @@
 // import { Link } from "react-router-dom";
-import styles from "./Button.css";
+import "./Button.css";
 
 export const PrimaryButton = ({ text, action, type }) => {
   return (
-    <button className="primaryButton" onClick={action} type={type}>
+    <button className="btn primaryButton" onClick={action} type={type}>
       {text}
     </button>
   );
@@ -11,7 +11,7 @@ export const PrimaryButton = ({ text, action, type }) => {
 
 export const SecondaryButton = ({ text, action, type }) => {
   return (
-    <button className="secondaryButton" onClick={action} type={type}>
+    <button className="btn secondaryButton" onClick={action} type={type}>
       {text}
     </button>
   );
@@ -20,6 +20,18 @@ export const SecondaryButton = ({ text, action, type }) => {
 export const SmallButton = ({ text, action, type }) => {
   return (
     <button className="smallButton" onClick={action} type={type}>
+      {text}
+    </button>
+  );
+};
+
+export const FullWidthButton = ({ text, action, type }) => {
+  return (
+    <button
+      className="btn primaryButton fullWidthBtn"
+      onClick={action}
+      type={type}
+    >
       {text}
     </button>
   );

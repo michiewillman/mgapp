@@ -4,7 +4,7 @@ import { QUERY_SYMPTOM_LOGS } from "../../utils/queries";
 import SymLogCard from "../SymLogCard/SymLogCard";
 import Loading from "../Loading/Loading";
 import "./SymptomLogList.css";
-import { PrimaryButton } from "../Button/Button";
+import { FullWidthButton, PrimaryButton } from "../Button/Button";
 import { useState } from "react";
 import SympLogForm from "../SympLogForm/SympLogForm";
 
@@ -43,7 +43,7 @@ const SymptomLogList = (props) => {
       ) : (
         <p className="noLogMessage">No symptoms logged for this day.</p>
       )}
-      <PrimaryButton text={"Log Symptom"} action={toggleModal} />
+      <FullWidthButton text={"Log Symptom"} action={toggleModal} />
       {isShown && (
         <SympLogForm
           shown={isShown}

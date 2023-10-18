@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   z-index: 1000;
-  pointer-events: none;
 }
 
 .entryLogo {
@@ -28,10 +27,14 @@
   text-align: center;
 }
 
+.entryContent h1 {
+  margin: 15px 0;
+}
+
 .entryBtns {
   margin: 15px 0 0 0;
 }
 
 .entryBtn {
-  margin-right: 25px;
+  margin: 0 10px;
 }

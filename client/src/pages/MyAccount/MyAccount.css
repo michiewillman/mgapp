@@ -19,7 +19,7 @@
 .userMedBadge {
   display: flex;
   flex: wrap;
-  background-color: #2e7c8b;
+  background-color: var(--primary);
   border-radius: 25px;
   align-items: center;
   padding: 5px 10px;
@@ -27,7 +27,7 @@
 }
 
 .userMedBadge p {
-  color: #e8e9ed;
+  color: var(--light);
   font-size: 14px;
   margin-right: 5px;
 }
@@ -40,7 +40,7 @@
 .userSymptomsBadge {
   display: flex;
   flex: wrap;
-  background-color: #e79d46;
+  background-color: var(--orange-dark);
   border-radius: 25px;
   align-items: center;
   padding: 5px 10px;
