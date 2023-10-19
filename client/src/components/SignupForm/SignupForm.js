@@ -51,49 +51,61 @@ const SignupForm = (props) => {
   return (
     <main>
       <div>
-        <div className="">
-          <h4 style={themeStyles.headline}>Create An Account</h4>
+        <div>
+          <h4 className="signupTitle">Create An Account</h4>
           <div className="">
             {data ? (
               <Dashboard />
             ) : (
               <form onSubmit={handleFormSubmit}>
-                <label htmlFor="firstName">First name</label>
-                <input
-                  className="formInput"
-                  placeholder="first name"
-                  name="firstName"
-                  type="text"
-                  value={formState.firstName}
-                  onChange={handleInputChange}
-                />
-                <label htmlFor="lastName">Last name</label>
-                <input
-                  className="formInput"
-                  placeholder="last name"
-                  name="lastName"
-                  type="text"
-                  value={formState.lastName}
-                  onChange={handleInputChange}
-                />
-                <label htmlFor="email">Email address</label>
-                <input
-                  className="formInput"
-                  placeholder="email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleInputChange}
-                />
-                <label htmlFor="password">Password</label>
-                <input
-                  className="formInput"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleInputChange}
-                />
+                <div className="inputSection">
+                  {" "}
+                  <label htmlFor="firstName">First name</label>
+                  <input
+                    className="formInput"
+                    placeholder="first name"
+                    name="firstName"
+                    type="text"
+                    value={formState.firstName}
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div className="inputSection">
+                  {" "}
+                  <label htmlFor="lastName">Last name</label>
+                  <input
+                    className="formInput"
+                    placeholder="last name"
+                    name="lastName"
+                    type="text"
+                    value={formState.lastName}
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div className="inputSection">
+                  {" "}
+                  <label htmlFor="email">Email address</label>
+                  <input
+                    className="formInput"
+                    placeholder="email"
+                    name="email"
+                    type="email"
+                    value={formState.email}
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div className="inputSection">
+                  {" "}
+                  <label htmlFor="password">Password</label>
+                  <input
+                    className="formInput"
+                    placeholder="******"
+                    name="password"
+                    type="password"
+                    value={formState.password}
+                    onChange={handleInputChange}
+                  />
+                </div>
                 <PrimaryButton text="Submit" type="Submit" />
               </form>
             )}

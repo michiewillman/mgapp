@@ -53,27 +53,31 @@ const LoginForm = (props) => {
     <main>
       <div>
         <div>
-          <h4 style={themeStyles.headline}>Login</h4>
+          <h4 className="loginTitle">Login</h4>
           <div>
             <form onSubmit={handleSubmit}>
-              <label htmlFor="email">Email</label>
-              <input
-                className="form-input"
-                placeholder="Your email"
-                name="email"
-                type="email"
-                value={formState.email}
-                onChange={changeState}
-              />
-              <label htmlFor="password">Password</label>
-              <input
-                className="form-input"
-                placeholder="******"
-                name="password"
-                type="password"
-                value={formState.password}
-                onChange={changeState}
-              />
+              <div className="input-section">
+                <label htmlFor="email">Email</label>
+                <input
+                  className="form-input"
+                  placeholder="Your email"
+                  name="email"
+                  type="email"
+                  value={formState.email}
+                  onChange={changeState}
+                />
+              </div>
+              <div className="input-section">
+                <label htmlFor="password">Password</label>
+                <input
+                  className="form-input"
+                  placeholder="******"
+                  name="password"
+                  type="password"
+                  value={formState.password}
+                  onChange={changeState}
+                />
+              </div>
               <PrimaryButton text="Submit" type="Submit" />
             </form>
             {error && <div className="submit-err">{error.message}</div>}

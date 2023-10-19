@@ -21,5 +21,9 @@ input[type]:focus,
 }
 
 .submit-err {
-  color: #d55669;
+  color: var(--orange-dark);
+}
+
+.loginTitle {
+  margin-bottom: 40px;
 }

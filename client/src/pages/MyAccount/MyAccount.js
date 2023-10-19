@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useMutation, useQuery } from "@apollo/client";
 import { QUERY_ME } from "../../utils/queries";
@@ -12,6 +12,16 @@ const MyAccount = () => {
   const { loading, data } = useQuery(QUERY_ME, {
     variables: { _id: userId },
   });
+
+  useEffect(() => {
+    if (!loading && data) {
+      const fetchedUserMeds = data.me.medications || [];
+      setMedications(fetchedUserMeds);
+
+      // Save medications in local storage
+      localStorage.setItem("userMeds", JSON.stringify(fetchedUserMeds));
+    }
+  }, [loading, data]);
   const user = data?.me || data?.user || {};
   // Pull out medications arary for mapping
   const userMeds = user?.medications || [];
