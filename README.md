@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Blizzard MG Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Myasthenia Gravis (MG) is a chronic autoimmune, neuromuscular disease that causes weakness in the skeletal muscles. Antibodies block muscle receptor connections. MG is considered a "snowflake" disease, because like a snowflake, MG can look different for every person.
 
-## Available Scripts
+People with MG often struggle with managing symptoms, medications and other aspects of their live after being diagnosed. This application is intended to change that, and assist people with MG in living a more full, controlled life with the knowledge they gain from tracking patterns in symptoms and triggers.
 
-In the project directory, you can run:
+Eventually, this application will be enhanced to analyze the data given by users to provide them with personalized trend information, aimed to giving them the answers they seek on what is causing their symptoms and how they can alleviate them.
 
-### `npm start`
+By pairing MG's associated teal color with hues of bright oranges and whimsical illustrations, the aesthetics of the app are intended to provide the user with a soothing but uplifting and inspiring atmosphere.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Technologies](#Technologies)
+- [Screenshot](#Screenshot)
+- [Deployment](#Deployment)
+- [Copyright](#Copyright)
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a id="Technologies"></a>
 
-### `npm run build`
+Tools used in this application:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- HTML / CSS / JavaScript
+- Node.js
+- Express.js
+- NoSQL - MongoDB database
+- GraphQL queries & mutations
+- Material UI icons
+- Material UI Date Picker (calendar)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshot
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a id="Screenshot"></a>
 
-### `npm run eject`
+![Screenshot of the entry screen](client/src/assets/cover.jpg)
+![Screenshot of the medicine section](client/src/assets/medsection.jpg)
+![Screenshot of the symptom section](client/src/assets/symptomsection.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a id="Deployment"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To view the deployed application on Heroku, [click here.](https://blizzard-mg-2139349e4552.herokuapp.com/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To view my repository code, [click here.](https://github.com/michiewillman/mgapp)
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a id="License"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright (c) 2023 Michie Willman
