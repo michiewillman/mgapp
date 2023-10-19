@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { ADD_SYMPTOM_LOG, ADD_USER_SYMPTOM } from "../../utils/mutations";
-import { PrimaryButton, SecondaryButton } from "../Button/Button";
+import { CancelButton, PrimaryButton } from "../Button/Button";
 // import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import "./SympLogForm.css";
 
@@ -98,7 +98,7 @@ const SympLogForm = (props) => {
                     onChange={(event) => handleInputChange(event)}
                   />
                 </div>
-                <SecondaryButton
+                <CancelButton
                   text="Cancel"
                   action={props.toggleModal}
                   type="button"

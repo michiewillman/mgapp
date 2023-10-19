@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.766);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
 .logModal {
   background: white;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 400px;
   pointer-events: auto;

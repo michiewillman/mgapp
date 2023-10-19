@@ -3,8 +3,7 @@ import { useQuery } from "@apollo/client";
 import { useEffect, useState } from "react";
 import { QUERY_MEDICATION_LOGS } from "../../utils/queries";
 import MedLogCard from "../MedLogCard/MedLogCard";
-import Loading from "../Loading/Loading";
-import { PrimaryButton } from "../Button/Button";
+import "./MedicationLogList.css";
 
 const MedicationLogList = (props) => {
   // Get med logs from user from date passed in
@@ -18,7 +17,7 @@ const MedicationLogList = (props) => {
 
   return (
     <div className="medLogSection">
-      <h2>Medication</h2>
+      <h2>Medication Taken Today</h2>
       {logData.length ? (
         <div className="flex-row">
           {/* Render a log card for each item in the logs array */}

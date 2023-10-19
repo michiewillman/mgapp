@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { ADD_USER_MEDICATION } from "../../utils/mutations";
-import { PrimaryButton, SecondaryButton } from "../Button/Button";
+import { CancelButton, PrimaryButton } from "../Button/Button";
 import firstToUppercase from "../../utils/firstToUppercase";
 
 const NewMedForm = (props) => {
@@ -65,7 +65,7 @@ const NewMedForm = (props) => {
                     onChange={(event) => handleInputChange(event)}
                   />
                 </div>
-                <SecondaryButton
+                <CancelButton
                   text="Cancel"
                   action={props.toggleMedForm}
                   type="button"

@@ -18,13 +18,24 @@
 }
 
 .secondaryButton {
-  color: var(--dark);
-  background-color: var(--mint);
+  color: var(--light);
+  background-color: var(--orange);
   margin-right: 10px;
 }
 
 .secondaryButton:hover {
-  background-color: var(--bright-teal);
+  background-color: var(--orange-dark);
+  box-shadow: var(--inner-box-shadow);
+}
+
+.cancelButton {
+  color: var(--dark);
+  background-color: var(--light);
+  margin-right: 10px;
+}
+
+.cancelButton:hover {
+  background-color: var(--mint);
   box-shadow: var(--inner-box-shadow);
 }
 

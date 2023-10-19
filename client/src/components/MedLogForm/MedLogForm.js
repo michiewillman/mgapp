@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMutation } from "@apollo/client";
 import { ADD_MEDICATION_LOG } from "../../utils/mutations";
-import { PrimaryButton, SecondaryButton } from "../Button/Button";
+import { CancelButton, PrimaryButton } from "../Button/Button";
 // import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import "./MedLogForm.css";
 
@@ -85,7 +85,7 @@ const MedLogForm = (props) => {
                     onChange={(event) => handleInputChange(event)}
                   />
                 </div>
-                <SecondaryButton
+                <CancelButton
                   text="Cancel"
                   action={props.toggleModal}
                   type="button"

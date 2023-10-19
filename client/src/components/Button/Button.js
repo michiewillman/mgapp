@@ -17,6 +17,14 @@ export const SecondaryButton = ({ text, action, type }) => {
   );
 };
 
+export const CancelButton = ({ text, action, type }) => {
+  return (
+    <button className="btn cancelButton" onClick={action} type={type}>
+      {text}
+    </button>
+  );
+};
+
 export const SmallButton = ({ text, action, type }) => {
   return (
     <button className="smallButton" onClick={action} type={type}>

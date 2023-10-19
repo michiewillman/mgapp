@@ -23,9 +23,9 @@ const Dashboard = () => {
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <div>
           <Calendar onDateSelected={(date) => setSelectedDate(date)} />
-          <MedicationLogList datetime={selectedDate} />
-          <UserMeds />
           <SymptomLogList datetime={selectedDate} />
+          <UserMeds />
+          <MedicationLogList datetime={selectedDate} />
         </div>
       </LocalizationProvider>
     </main>

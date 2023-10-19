@@ -16,7 +16,7 @@ textarea:focus,
 input:focus,
 input[type]:focus,
 .uneditable-input:focus {
-  border-color: #e79d46;
+  border: 2px solid var(--orange);
   outline: none;
 }
 
